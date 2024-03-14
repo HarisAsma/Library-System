@@ -120,9 +120,9 @@ public class Delete extends javax.swing.JFrame {
             int rowsAffected = pst.executeUpdate();
 
             if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "Librarian deleted successfully");
+                JOptionPane.showMessageDialog(this, "Borrower deleted successfully");
             } else {
-                JOptionPane.showMessageDialog(this, "Librarian with ID " + idToDelete + " not found");
+                JOptionPane.showMessageDialog(this, "Borrower with ID " + idToDelete + " not found");
             }
         } catch (SQLException ex) {
             ex.printStackTrace();

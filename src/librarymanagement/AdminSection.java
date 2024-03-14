@@ -116,8 +116,8 @@ public class AdminSection extends javax.swing.JFrame {
     }//GEN-LAST:event_viewActionPerformed
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-         Update update = new  Update (); 
-       update.setVisible(true);
+        Update update = new  Update ();
+        update.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_updateActionPerformed
 
