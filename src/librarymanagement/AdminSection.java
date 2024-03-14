@@ -19,7 +19,6 @@ public class AdminSection extends javax.swing.JFrame {
     private void initComponents() {
 
         delete = new javax.swing.JButton();
-        logout = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         add = new javax.swing.JButton();
         view = new javax.swing.JButton();
@@ -32,14 +31,6 @@ public class AdminSection extends javax.swing.JFrame {
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteActionPerformed(evt);
-            }
-        });
-
-        logout.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        logout.setText("Logout");
-        logout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logoutActionPerformed(evt);
             }
         });
 
@@ -85,10 +76,6 @@ public class AdminSection extends javax.swing.JFrame {
                         .addGap(12, 12, 12)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(68, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logout)
-                .addGap(96, 96, 96))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,9 +90,7 @@ public class AdminSection extends javax.swing.JFrame {
                 .addComponent(delete)
                 .addGap(29, 29, 29)
                 .addComponent(update)
-                .addGap(31, 31, 31)
-                .addComponent(logout)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
 
         pack();
@@ -117,12 +102,6 @@ public class AdminSection extends javax.swing.JFrame {
         this.dispose();
 
     }//GEN-LAST:event_deleteActionPerformed
-
-    private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
-        LibraryManagement logout= new  LibraryManagement(); 
-        logout.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_logoutActionPerformed
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
         Borrower librarianForm = new Borrower(); 
@@ -181,7 +160,6 @@ public class AdminSection extends javax.swing.JFrame {
     private javax.swing.JButton add;
     private javax.swing.JButton delete;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton logout;
     private javax.swing.JButton update;
     private javax.swing.JButton view;
     // End of variables declaration//GEN-END:variables
