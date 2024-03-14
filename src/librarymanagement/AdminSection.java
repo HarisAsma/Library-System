@@ -21,8 +21,6 @@ public class AdminSection extends javax.swing.JFrame {
         delete = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         add = new javax.swing.JButton();
-        view = new javax.swing.JButton();
-        update = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,22 +43,6 @@ public class AdminSection extends javax.swing.JFrame {
             }
         });
 
-        view.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        view.setText("View Borrower");
-        view.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewActionPerformed(evt);
-            }
-        });
-
-        update.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        update.setText("Update Borrower");
-        update.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                updateActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -68,14 +50,12 @@ public class AdminSection extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(92, 92, 92)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(update, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(view, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                     .addComponent(add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,12 +65,8 @@ public class AdminSection extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(add)
                 .addGap(18, 18, 18)
-                .addComponent(view)
-                .addGap(27, 27, 27)
                 .addComponent(delete)
-                .addGap(29, 29, 29)
-                .addComponent(update)
-                .addContainerGap(102, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         pack();
@@ -108,18 +84,6 @@ public class AdminSection extends javax.swing.JFrame {
         librarianForm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_addActionPerformed
-
-    private void viewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewActionPerformed
-        ViewBorrower viewForm = new  ViewBorrower (); 
-        viewForm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_viewActionPerformed
-
-    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-        Update update = new  Update ();
-        update.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_updateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,7 +124,5 @@ public class AdminSection extends javax.swing.JFrame {
     private javax.swing.JButton add;
     private javax.swing.JButton delete;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton update;
-    private javax.swing.JButton view;
     // End of variables declaration//GEN-END:variables
 }

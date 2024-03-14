@@ -122,7 +122,7 @@ public class Delete extends javax.swing.JFrame {
             if (rowsAffected > 0) {
                 JOptionPane.showMessageDialog(this, "Borrower deleted successfully");
             } else {
-                JOptionPane.showMessageDialog(this, "Borrower with ID " + idToDelete + " not found");
+                JOptionPane.showMessageDialog(this, "Librarian with ID " + idToDelete + " not found");
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
